@@ -14,6 +14,6 @@ function rows(size) {
         let right = last[i] || 0;
         current[i] = left + right;
     }
-    results[size] = result.concat([current]); // Adding the current result to the results.
+    results[size] = result.concat([current]);
     return [...result, current]
 }
