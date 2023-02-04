@@ -55,7 +55,7 @@ export function insertItemAtTop(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItem(cards, position) {
-  // The test expects the new card to be removed from the array by mutating the original array~
+  // The test expects the card to be removed from the array by mutating the original array~
   cards.splice(position, 1);
   return cards;
   /* Without mutating the original array, the following would be the correct implementation:
@@ -71,7 +71,7 @@ export function removeItem(cards, position) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemFromTop(cards) {
-  // The test expects the new card to be removed from the end of the array by mutating the original array~
+  // The test expects the card to be removed from the end of the array by mutating the original array~
   cards.pop();
   return cards;
   /* Without mutating the original array, the following would be the correct implementation:
@@ -104,8 +104,8 @@ export function insertItemAtBottom(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemAtBottom(cards) {
-  // The test expects the new card to be added to the start of the array by mutating the original array~
-  cards.shift()
+  // The test expects the card to be removed from the start of the array by mutating the original array~
+  cards.shift();
   return cards;
   /* Without mutating the original array, the following would be the correct implementation:
   return cards.slice(1);
