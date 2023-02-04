@@ -4,6 +4,6 @@ node_modules
 # Yarn
 yarn-error.log
 
-# PHPStorm
+# JetBrains
 .idea/
 
